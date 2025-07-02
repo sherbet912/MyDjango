@@ -31,6 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'admin_interface',
+    'colorfield',
+    'ckeditor',
+    'ckeditor_uploader',
+    'markdownx',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,3 +129,19 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_CONFIGS = {
+    "default": {
+        "toolbar": "full",
+        "height": 300,
+        "width": "100%",
+        "extraPlugins": "image2",  # 可強化圖片編輯體驗
+    },
+}
+
+MARKDOWNX_MEDIA_PATH = "markdownx/"
+MARKDOWNX_UPLOAD_MAX_SIZE = 5242880  # 5MB
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
