@@ -13,10 +13,10 @@ RUN apt-get update \
 
 # COPY pyproject.toml .
 
-# ENV PATH="/root/.local/bin:${PATH}" \
-#     POETRY_VIRTUALENVS_IN_PROJECT=true \
-#     POETRY_VIRTUALENVS_CREATE=1 \
-#     POETRY_CACHE_DIR=/tmp/poetry_cache
+ENV PATH="/root/.local/bin:${PATH}" \
+    POETRY_VIRTUALENVS_IN_PROJECT=true \
+    POETRY_VIRTUALENVS_CREATE=1 \
+    POETRY_CACHE_DIR=/tmp/poetry_cache
 
 # RUN poetry install \
 #     && rm -rf $POETRY_CACHE_DIR
