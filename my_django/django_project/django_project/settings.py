@@ -36,12 +36,14 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'markdownx',
+    'mdeditor',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -145,3 +147,5 @@ MARKDOWNX_UPLOAD_MAX_SIZE = 5242880  # 5MB
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'

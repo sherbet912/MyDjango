@@ -119,6 +119,17 @@ Markdown = "*"
 Pillow = "*"
 
 [[package]]
+name = "django-mdeditor"
+version = "0.1.20"
+description = "A simple Django app to edit markdown text."
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "django-mdeditor-0.1.20.tar.gz", hash = "sha256:d1f3b735b6202b8820f10e024a5aa28c5b948897ee7a8dbb84558df75339827e"},
+]
+
+[[package]]
 name = "markdown"
 version = "3.8.2"
 description = "Python implementation of John Gruber's Markdown."
@@ -379,4 +390,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13"
-content-hash = "25ce41a349e4d0b32611d6df53efd6998c28e2554cb0e076bf4ff1a79af71003"
+content-hash = "1796c31aa50ed4695de1ca98e74f4950282824cc78600e273c50eb33c24b02c1"

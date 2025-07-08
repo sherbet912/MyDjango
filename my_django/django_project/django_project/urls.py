@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("ckeditor/", include("ckeditor_uploader.urls")),
     path("markdownx/", include("markdownx.urls")),
+    path('mdeditor/', include('mdeditor.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
